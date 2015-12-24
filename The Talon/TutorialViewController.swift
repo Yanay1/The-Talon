@@ -94,10 +94,7 @@ class TutorialViewController: UIViewController, UIPopoverPresentationControllerD
     
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         if previousTraitCollection?.verticalSizeClass == UIUserInterfaceSizeClass.Compact{
-            let firstItem = toolbar.items?[0] as? UIBarButtonItem!
-            if firstItem?.title == "Tutorials"{
-                toolbar.items?.removeAtIndex(0)
-            }
+            
         }
         else if previousTraitCollection?.verticalSizeClass == UIUserInterfaceSizeClass.Regular{
             if toolbar.items?.count == 3{
