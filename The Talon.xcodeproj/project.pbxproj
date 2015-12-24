@@ -17,6 +17,7 @@
 		39F51D7B1C2C5F930005F252 /* The_TalonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D7A1C2C5F930005F252 /* The_TalonUITests.swift */; };
 		39F51D891C2C5FF60005F252 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D881C2C5FF60005F252 /* XMLParser.swift */; };
 		39F51D8B1C2C606D0005F252 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D8A1C2C606D0005F252 /* TutorialViewController.swift */; };
+		39F51D951C2CAF000005F252 /* StringtoNSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D941C2CAF000005F252 /* StringtoNSURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		39F51D7C1C2C5F930005F252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39F51D881C2C5FF60005F252 /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		39F51D8A1C2C606D0005F252 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		39F51D941C2CAF000005F252 /* StringtoNSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringtoNSURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				39F51D661C2C5F930005F252 /* Info.plist */,
 				39F51D881C2C5FF60005F252 /* XMLParser.swift */,
 				39F51D8A1C2C606D0005F252 /* TutorialViewController.swift */,
+				39F51D941C2CAF000005F252 /* StringtoNSURL.swift */,
 			);
 			path = "The Talon";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F51D951C2CAF000005F252 /* StringtoNSURL.swift in Sources */,
 				39F51D891C2C5FF60005F252 /* XMLParser.swift in Sources */,
 				39F51D5D1C2C5F930005F252 /* SecondViewController.swift in Sources */,
 				39F51D8B1C2C606D0005F252 /* TutorialViewController.swift in Sources */,
@@ -494,6 +498,7 @@
 				39F51D811C2C5F930005F252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F51D821C2C5F930005F252 /* Build configuration list for PBXNativeTarget "The TalonTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +507,7 @@
 				39F51D841C2C5F930005F252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F51D851C2C5F930005F252 /* Build configuration list for PBXNativeTarget "The TalonUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +516,7 @@
 				39F51D871C2C5F930005F252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
