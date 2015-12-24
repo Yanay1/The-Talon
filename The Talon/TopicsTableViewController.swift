@@ -1,21 +1,20 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  The Talon
 //
 //  Created by Yanay Rosen on 12/24/15.
 //  Copyright © 2015 Yanay Rosen. All rights reserved.
 //
-
 import UIKit
 
-class SecondViewController: UITableViewController, XMLParserDelegate {
+class TopicsTableViewController: UITableViewController, XMLParserDelegate {
     
     var xmlParser : XMLParser!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL(string: "http://twitrss.me/twitter_user_to_rss/?user=shstalon")
+        let url = NSURL(string: "http://sharontalon.com/feed")
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url!)
@@ -51,7 +50,7 @@ class SecondViewController: UITableViewController, XMLParserDelegate {
         let currentDictionary = xmlParser.arrParsedData[indexPath.row] as Dictionary<String, String>
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         cell.textLabel?.text = currentDictionary["title"]
-        cell.detailTextLabel?.text = currentDictionary["pubDate"]
+        cell.detailTextLabel?.text = currentDictionary["description"]
         return cell
     }
     
