@@ -40,6 +40,9 @@ class XMLParser: NSObject, NSXMLParserDelegate {
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         currentElement = elementName
+        
+        
+        
     }
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
@@ -69,7 +72,7 @@ class XMLParser: NSObject, NSXMLParserDelegate {
     func parser(parser: NSXMLParser, foundCharacters string: String) {
         
         if currentElement == "title"  || currentElement == "description"
-            || currentElement == "link" || currentElement == "pubDate"
+            || currentElement == "link"
         {
             
             foundCharacters += string
