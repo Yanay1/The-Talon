@@ -1,4 +1,13 @@
 //
+//  XMLParserTwitter.swift
+//  The Talon
+//
+//  Created by Yanay Rosen on 1/1/16.
+//  Copyright © 2016 Yanay Rosen. All rights reserved.
+//
+
+import Foundation
+//
 //  XMLParser.swift
 //  The Talon
 //
@@ -8,13 +17,13 @@
 
 import UIKit
 
-@objc protocol XMLParserDelegate{
+@objc protocol XMLParserTwitterDelegate{
     
     func parsingWasFinished()
     
 }
 
-class XMLParser: NSObject, NSXMLParserDelegate {
+class XMLParserTwitter: NSObject, NSXMLParserDelegate {
     var arrParsedData = [Dictionary<String, String>]()
     var currentDataDictionary = Dictionary<String, String>()
     var currentElement = ""
@@ -47,7 +56,7 @@ class XMLParser: NSObject, NSXMLParserDelegate {
             let attrsUrl = attributeDict as [String: String]
             var urlPic = attrsUrl["url"]
             
-
+            
             print(String.self, urlPic)
             elements.setObject(urlPic!, forKey: "enclosure")
             
@@ -68,7 +77,7 @@ class XMLParser: NSObject, NSXMLParserDelegate {
             if elementName == "link" || elementName == "description" {
                 foundCharacters = (foundCharacters as NSString).substringFromIndex(3)
             }
-           
+            
             
             currentDataDictionary[currentElement] = foundCharacters
             
@@ -79,10 +88,9 @@ class XMLParser: NSObject, NSXMLParserDelegate {
             {
                 arrParsedData.append(currentDataDictionary)
             }else {
-                if currentElement == "pubDate" && isFirst {
+                if currentElement == "urlPic" && isFirst {
                     isFirst = false
                 }
-                
                 
             }
         }

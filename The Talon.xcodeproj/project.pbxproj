@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39B0966A1C35C5DA00699AD4 /* StringDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B096691C35C5DA00699AD4 /* StringDecoder.swift */; };
+		39C68CF91C373D90000F843F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C68CF81C373D90000F843F /* ThirdViewController.swift */; };
 		39F51D591C2C5F930005F252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D581C2C5F930005F252 /* AppDelegate.swift */; };
 		39F51D5B1C2C5F930005F252 /* TopicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D5A1C2C5F930005F252 /* TopicsTableViewController.swift */; };
 		39F51D5D1C2C5F930005F252 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D5C1C2C5F930005F252 /* SecondViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		39B096691C35C5DA00699AD4 /* StringDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDecoder.swift; sourceTree = "<group>"; };
+		39C68CF81C373D90000F843F /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		39F51D551C2C5F930005F252 /* The Talon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Talon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F51D581C2C5F930005F252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39F51D5A1C2C5F930005F252 /* TopicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				39F51D8A1C2C606D0005F252 /* TutorialViewController.swift */,
 				39F51D941C2CAF000005F252 /* StringtoNSURL.swift */,
 				39B096691C35C5DA00699AD4 /* StringDecoder.swift */,
+				39C68CF81C373D90000F843F /* ThirdViewController.swift */,
 			);
 			path = "The Talon";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				39B0966A1C35C5DA00699AD4 /* StringDecoder.swift in Sources */,
 				39F51D8B1C2C606D0005F252 /* TutorialViewController.swift in Sources */,
 				39F51D591C2C5F930005F252 /* AppDelegate.swift in Sources */,
+				39C68CF91C373D90000F843F /* ThirdViewController.swift in Sources */,
 				39F51D5B1C2C5F930005F252 /* TopicsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

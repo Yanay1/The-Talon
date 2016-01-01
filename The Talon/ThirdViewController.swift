@@ -1,20 +1,23 @@
 //
-//  FirstViewController.swift
+//  ThirdViewController.swift
 //  The Talon
 //
-//  Created by Yanay Rosen on 12/24/15.
-//  Copyright © 2015 Yanay Rosen. All rights reserved.
+//  Created by Yanay Rosen on 1/1/16.
+//  Copyright © 2016 Yanay Rosen. All rights reserved.
 //
+
+import Foundation
 import UIKit
 
-class TopicsTableViewController: UITableViewController, XMLParserDelegate {
+
+class ThirdViewController: UITableViewController, XMLParserDelegate {
     
     var xmlParser : XMLParser!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL(string: "http://sharontalon.com/feed")
+        let url = NSURL(string: "https://twitrss.me/twitter_user_to_rss/?user=SHS_Eagles")
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url!)
@@ -47,26 +50,14 @@ class TopicsTableViewController: UITableViewController, XMLParserDelegate {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("idCell", forIndexPath: indexPath)
         
-        
         let currentDictionary = xmlParser.arrParsedData[indexPath.row] as Dictionary<String, String>
-        let url = currentDictionary["enclosure"]
-        let data = NSData(contentsOfURL: url!.asNSURL) //make sure your image in this url does exist, otherwise unwrap in a if let check
-        
-        let description = currentDictionary["description"]
-    
-        
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         cell.textLabel?.text = currentDictionary["title"]
-        cell.detailTextLabel?.text = String(htmlEncodedString: description!)
-                cell.detailTextLabel?.numberOfLines = 3;
-        cell.textLabel?.numberOfLines = 2;
-       
-            cell.imageView?.image = UIImage(data: data!)
-        
-        
+        cell.detailTextLabel?.text = currentDictionary["pubDate"]
         return cell
     }
-        
+    
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
     }

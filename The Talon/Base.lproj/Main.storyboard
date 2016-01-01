@@ -15,15 +15,28 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.27058823529999998" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.27058823529411763" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.27058823529411763" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="0.27058823529411763" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="1Yu-ce-qQI" kind="relationship" relationship="viewControllers" id="8vn-eB-IvK"/>
                         <segue destination="TlQ-ME-IbL" kind="relationship" relationship="viewControllers" id="cMk-Hs-2N3"/>
+                        <segue destination="lWX-1A-cgw" kind="relationship" relationship="viewControllers" id="QqZ-2a-Ndi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1176" y="18"/>
+            <point key="canvasLocation" x="-1056" y="658"/>
         </scene>
         <!--Articles-->
         <scene sceneID="bA9-lK-X8X">
@@ -40,7 +53,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yJ-tc-jz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="-248"/>
+            <point key="canvasLocation" x="202" y="-432"/>
         </scene>
         <!--The Talon-->
         <scene sceneID="59B-Ro-YvL">
@@ -86,7 +99,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q61-ki-ar8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="-277"/>
+            <point key="canvasLocation" x="1168" y="-432"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="Ctv-Ux-E8V">
@@ -156,13 +169,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7l-6q-fL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258" y="1103"/>
+            <point key="canvasLocation" x="-1874" y="658"/>
         </scene>
         <!--Talon Twitter-->
         <scene sceneID="Jki-UV-hRz">
             <objects>
                 <navigationController id="TlQ-ME-IbL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Talon Twitter" image="Twitter-100" selectedImage="Twitter Filled-100" id="hgU-QW-6RI"/>
+                    <tabBarItem key="tabBarItem" title="Talon Twitter" image="Talon" selectedImage="Talon Filled" id="hgU-QW-6RI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yTw-CP-WVC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -173,13 +186,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iu8-0E-jkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="636"/>
+            <point key="canvasLocation" x="214" y="284"/>
         </scene>
         <!--The Talon-->
         <scene sceneID="JQf-AI-K61">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="YIQ-C1-TVp" customClass="SecondViewController" customModule="The_Talon" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LIw-3D-BUf">
+                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LIw-3D-BUf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,7 +200,7 @@
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCell" textLabel="A6k-Ef-5RP" detailTextLabel="DLj-N5-3of" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="kri-4P-RyE">
                                 <rect key="frame" x="0.0" y="86" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kri-4P-RyE" id="z4M-l9-QrE">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="kri-4P-RyE" id="z4M-l9-QrE">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -223,12 +236,87 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="1272" y="643"/>
+            <point key="canvasLocation" x="1168" y="284"/>
+        </scene>
+        <!--The Talon-->
+        <scene sceneID="aB3-eK-jzx">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="aRi-J0-65A" customClass="ThirdViewController" customModule="The_Talon" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rAM-Um-mnt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCell" textLabel="YXl-dm-nga" detailTextLabel="dD8-FA-VtP" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="bI2-af-4nh">
+                                <rect key="frame" x="0.0" y="86" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="bI2-af-4nh" id="Pwr-6X-oYo">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YXl-dm-nga">
+                                            <rect key="frame" x="15" y="23" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dD8-FA-VtP">
+                                            <rect key="frame" x="15" y="43" width="41" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aRi-J0-65A" id="UHd-st-6Pe"/>
+                            <outlet property="delegate" destination="aRi-J0-65A" id="r1U-rH-I2I"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Sqd-Qu-45g"/>
+                    <navigationItem key="navigationItem" title="The Talon" id="xwd-zw-MKC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0i-Ka-JHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xIL-cB-2Ai">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="1142" y="1046"/>
+        </scene>
+        <!--School Twitter-->
+        <scene sceneID="ffM-yA-sMo">
+            <objects>
+                <navigationController id="lWX-1A-cgw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="School Twitter" image="Twitter-100" selectedImage="Twitter Filled-100" id="4v2-SZ-rw7">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="0.27058823529411763" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qc5-Hn-eBS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aRi-J0-65A" kind="relationship" relationship="rootViewController" id="2nX-d8-k9H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuA-r7-YoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="1046"/>
         </scene>
     </scenes>
     <resources>
         <image name="Align Justify Filled-100" width="37" height="37"/>
         <image name="Align Justify-100" width="37" height="37"/>
+        <image name="Talon" width="50" height="50"/>
+        <image name="Talon Filled" width="50" height="50"/>
         <image name="Twitter Filled-100" width="37" height="37"/>
         <image name="Twitter-100" width="37" height="37"/>
     </resources>
