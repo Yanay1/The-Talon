@@ -49,11 +49,16 @@ class TopicsTableViewController: UITableViewController, XMLParserDelegate {
         
         
         let currentDictionary = xmlParser.arrParsedData[indexPath.row] as Dictionary<String, String>
-        let url = String("http://media.breitbart.com/media/2015/07/GettyImages-479726874-e1436388881883-640x480.jpg")
-        let data = NSData(contentsOfURL: url.asNSURL) //make sure your image in this url does exist, otherwise unwrap in a if let check
+        let url = currentDictionary["enclosure"]
+        let data = NSData(contentsOfURL: url!.asNSURL) //make sure your image in this url does exist, otherwise unwrap in a if let check
+        
+        let description = currentDictionary["description"]
+    
+        
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         cell.textLabel?.text = currentDictionary["title"]
-        cell.detailTextLabel?.text = currentDictionary["description"]
+        cell.detailTextLabel?.text = String(htmlEncodedString: description!)
+                cell.detailTextLabel?.numberOfLines = 3;
         
         cell.imageView?.image = UIImage(data: data!)
 
