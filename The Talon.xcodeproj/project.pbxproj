@@ -7,8 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390157A61C38B6EC0070A73F /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390157A51C38B6EC0070A73F /* FourthViewController.swift */; };
 		39B0966A1C35C5DA00699AD4 /* StringDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B096691C35C5DA00699AD4 /* StringDecoder.swift */; };
 		39C68CF91C373D90000F843F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C68CF81C373D90000F843F /* ThirdViewController.swift */; };
+		39DCB3671C38C19400BA1DF1 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCB3661C38C19400BA1DF1 /* PlayerViewController.swift */; };
+		39DCB36B1C38C1F000BA1DF1 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DCB3691C38C1F000BA1DF1 /* YTPlayerView.m */; };
+		39DCB36D1C38C42300BA1DF1 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 39DCB36C1C38C42300BA1DF1 /* Assets */; };
+		39DCB3701C38CB6A00BA1DF1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB36E1C38CB6A00BA1DF1 /* Bolts.framework */; };
+		39DCB3711C38CB6A00BA1DF1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB36F1C38CB6A00BA1DF1 /* Parse.framework */; };
+		39DCB3731C38CB8F00BA1DF1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB3721C38CB8F00BA1DF1 /* AudioToolbox.framework */; };
+		39DCB3751C38CB9500BA1DF1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB3741C38CB9500BA1DF1 /* CFNetwork.framework */; };
+		39DCB3771C38CB9B00BA1DF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB3761C38CB9B00BA1DF1 /* CoreGraphics.framework */; };
+		39DCB3791C38CBA200BA1DF1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB3781C38CBA200BA1DF1 /* CoreLocation.framework */; };
+		39DCB37B1C38CBAA00BA1DF1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB37A1C38CBAA00BA1DF1 /* QuartzCore.framework */; };
+		39DCB37D1C38CBB000BA1DF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB37C1C38CBB000BA1DF1 /* Security.framework */; };
+		39DCB37F1C38CBB700BA1DF1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB37E1C38CBB700BA1DF1 /* StoreKit.framework */; };
+		39DCB3811C38CBC200BA1DF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB3801C38CBC200BA1DF1 /* SystemConfiguration.framework */; };
+		39DCB3831C38CBC900BA1DF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB3821C38CBC900BA1DF1 /* libz.tbd */; };
+		39DCB3851C38CBD200BA1DF1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DCB3841C38CBD200BA1DF1 /* libsqlite3.tbd */; };
 		39F51D591C2C5F930005F252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D581C2C5F930005F252 /* AppDelegate.swift */; };
 		39F51D5B1C2C5F930005F252 /* TopicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D5A1C2C5F930005F252 /* TopicsTableViewController.swift */; };
 		39F51D5D1C2C5F930005F252 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F51D5C1C2C5F930005F252 /* SecondViewController.swift */; };
@@ -40,8 +56,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390157A51C38B6EC0070A73F /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		39B096691C35C5DA00699AD4 /* StringDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDecoder.swift; sourceTree = "<group>"; };
 		39C68CF81C373D90000F843F /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		39DCB3661C38C19400BA1DF1 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		39DCB3681C38C1F000BA1DF1 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		39DCB3691C38C1F000BA1DF1 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		39DCB36A1C38C1F000BA1DF1 /* The Talon-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "The Talon-Bridging-Header.h"; sourceTree = "<group>"; };
+		39DCB36C1C38C42300BA1DF1 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		39DCB36E1C38CB6A00BA1DF1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		39DCB36F1C38CB6A00BA1DF1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		39DCB3721C38CB8F00BA1DF1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		39DCB3741C38CB9500BA1DF1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		39DCB3761C38CB9B00BA1DF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39DCB3781C38CBA200BA1DF1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		39DCB37A1C38CBAA00BA1DF1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		39DCB37C1C38CBB000BA1DF1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		39DCB37E1C38CBB700BA1DF1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		39DCB3801C38CBC200BA1DF1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		39DCB3821C38CBC900BA1DF1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		39DCB3841C38CBD200BA1DF1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		39F51D551C2C5F930005F252 /* The Talon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Talon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F51D581C2C5F930005F252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39F51D5A1C2C5F930005F252 /* TopicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +100,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DCB3851C38CBD200BA1DF1 /* libsqlite3.tbd in Frameworks */,
+				39DCB3831C38CBC900BA1DF1 /* libz.tbd in Frameworks */,
+				39DCB3811C38CBC200BA1DF1 /* SystemConfiguration.framework in Frameworks */,
+				39DCB37F1C38CBB700BA1DF1 /* StoreKit.framework in Frameworks */,
+				39DCB37D1C38CBB000BA1DF1 /* Security.framework in Frameworks */,
+				39DCB37B1C38CBAA00BA1DF1 /* QuartzCore.framework in Frameworks */,
+				39DCB3791C38CBA200BA1DF1 /* CoreLocation.framework in Frameworks */,
+				39DCB3771C38CB9B00BA1DF1 /* CoreGraphics.framework in Frameworks */,
+				39DCB3751C38CB9500BA1DF1 /* CFNetwork.framework in Frameworks */,
+				39DCB3731C38CB8F00BA1DF1 /* AudioToolbox.framework in Frameworks */,
+				39DCB3711C38CB6A00BA1DF1 /* Parse.framework in Frameworks */,
+				39DCB3701C38CB6A00BA1DF1 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +135,26 @@
 		39F51D4C1C2C5F930005F252 = {
 			isa = PBXGroup;
 			children = (
+				39DCB3841C38CBD200BA1DF1 /* libsqlite3.tbd */,
+				39DCB3821C38CBC900BA1DF1 /* libz.tbd */,
+				39DCB3801C38CBC200BA1DF1 /* SystemConfiguration.framework */,
+				39DCB37E1C38CBB700BA1DF1 /* StoreKit.framework */,
+				39DCB37C1C38CBB000BA1DF1 /* Security.framework */,
+				39DCB37A1C38CBAA00BA1DF1 /* QuartzCore.framework */,
+				39DCB3781C38CBA200BA1DF1 /* CoreLocation.framework */,
+				39DCB3761C38CB9B00BA1DF1 /* CoreGraphics.framework */,
+				39DCB3741C38CB9500BA1DF1 /* CFNetwork.framework */,
+				39DCB3721C38CB8F00BA1DF1 /* AudioToolbox.framework */,
 				39F51D571C2C5F930005F252 /* The Talon */,
 				39F51D6E1C2C5F930005F252 /* The TalonTests */,
 				39F51D791C2C5F930005F252 /* The TalonUITests */,
 				39F51D561C2C5F930005F252 /* Products */,
+				39DCB3681C38C1F000BA1DF1 /* YTPlayerView.h */,
+				39DCB3691C38C1F000BA1DF1 /* YTPlayerView.m */,
+				39DCB36A1C38C1F000BA1DF1 /* The Talon-Bridging-Header.h */,
+				39DCB36C1C38C42300BA1DF1 /* Assets */,
+				39DCB36E1C38CB6A00BA1DF1 /* Bolts.framework */,
+				39DCB36F1C38CB6A00BA1DF1 /* Parse.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +183,8 @@
 				39F51D941C2CAF000005F252 /* StringtoNSURL.swift */,
 				39B096691C35C5DA00699AD4 /* StringDecoder.swift */,
 				39C68CF81C373D90000F843F /* ThirdViewController.swift */,
+				390157A51C38B6EC0070A73F /* FourthViewController.swift */,
+				39DCB3661C38C19400BA1DF1 /* PlayerViewController.swift */,
 			);
 			path = "The Talon";
 			sourceTree = "<group>";
@@ -248,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F51D651C2C5F930005F252 /* LaunchScreen.storyboard in Resources */,
+				39DCB36D1C38C42300BA1DF1 /* Assets in Resources */,
 				39F51D621C2C5F930005F252 /* Assets.xcassets in Resources */,
 				39F51D601C2C5F930005F252 /* Main.storyboard in Resources */,
 			);
@@ -275,13 +340,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F51D951C2CAF000005F252 /* StringtoNSURL.swift in Sources */,
+				39DCB36B1C38C1F000BA1DF1 /* YTPlayerView.m in Sources */,
 				39F51D891C2C5FF60005F252 /* XMLParser.swift in Sources */,
 				39F51D5D1C2C5F930005F252 /* SecondViewController.swift in Sources */,
+				390157A61C38B6EC0070A73F /* FourthViewController.swift in Sources */,
 				39B0966A1C35C5DA00699AD4 /* StringDecoder.swift in Sources */,
 				39F51D8B1C2C606D0005F252 /* TutorialViewController.swift in Sources */,
 				39F51D591C2C5F930005F252 /* AppDelegate.swift in Sources */,
 				39C68CF91C373D90000F843F /* ThirdViewController.swift in Sources */,
 				39F51D5B1C2C5F930005F252 /* TopicsTableViewController.swift in Sources */,
+				39DCB3671C38C19400BA1DF1 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,10 +489,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "The Talon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yanay.The-Talon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Talon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -432,10 +507,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "The Talon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yanay.The-Talon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Talon-Bridging-Header.h";
 			};
 			name = Release;
 		};
