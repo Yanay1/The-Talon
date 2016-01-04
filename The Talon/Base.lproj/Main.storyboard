@@ -189,7 +189,7 @@
             </objects>
             <point key="canvasLocation" x="214" y="284"/>
         </scene>
-        <!--Title-->
+        <!--The Talon-->
         <scene sceneID="JQf-AI-K61">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="YIQ-C1-TVp" customClass="SecondViewController" customModule="The_Talon" customModuleProvider="target" sceneMemberID="viewController">
@@ -229,7 +229,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="PPa-UL-uZv"/>
-                    <navigationItem key="navigationItem" title="Title" id="qHk-EB-Cze"/>
+                    <navigationItem key="navigationItem" title="The Talon" id="qHk-EB-Cze"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZ8-Ro-l95" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="h8M-Bw-a8O">
