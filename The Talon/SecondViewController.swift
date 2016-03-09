@@ -10,12 +10,18 @@ import UIKit
 
 class SecondViewController: UITableViewController, XMLParserDelegate {
     
+    
+    
+    
     var xmlParser : XMLParser!
     
    
+    @IBOutlet weak var navigationBar: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.navigationBar.title = "Loading"
         let url = NSURL(string: "http://twitrss.me/twitter_user_to_rss/?user=shstalon")
         xmlParser = XMLParser()
         xmlParser.delegate = self
@@ -38,6 +44,7 @@ class SecondViewController: UITableViewController, XMLParserDelegate {
     func parsingWasFinished() {
         dispatch_async(dispatch_get_main_queue(), {
             self.tableView.reloadData()
+             self.navigationBar.title = "The Talon"
         })
     }
     

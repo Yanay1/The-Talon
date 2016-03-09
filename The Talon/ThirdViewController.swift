@@ -14,9 +14,15 @@ class ThirdViewController: UITableViewController, XMLParserDelegate {
     
     var xmlParser : XMLParser!
     
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.navigationBar.title = "Loading"
         let url = NSURL(string: "https://twitrss.me/twitter_user_to_rss/?user=SHS_Eagles")
         xmlParser = XMLParser()
         xmlParser.delegate = self
@@ -39,6 +45,7 @@ class ThirdViewController: UITableViewController, XMLParserDelegate {
     func parsingWasFinished() {
         dispatch_async(dispatch_get_main_queue(), {
             self.tableView.reloadData()
+             self.navigationBar.title = "The Talon"
         })
     }
     

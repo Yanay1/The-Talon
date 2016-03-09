@@ -231,6 +231,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="PPa-UL-uZv"/>
                     <navigationItem key="navigationItem" title="The Talon" id="qHk-EB-Cze"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="qHk-EB-Cze" id="gqR-hK-kMl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZ8-Ro-l95" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="h8M-Bw-a8O">
@@ -281,6 +284,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="Sqd-Qu-45g"/>
                     <navigationItem key="navigationItem" title="The Talon" id="xwd-zw-MKC"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="xwd-zw-MKC" id="t1g-2x-E8q"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0i-Ka-JHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xIL-cB-2Ai">
