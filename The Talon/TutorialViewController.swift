@@ -13,7 +13,10 @@ class TutorialViewController: UIViewController, UIPopoverPresentationControllerD
     
     @IBOutlet weak var toolbar: UIToolbar!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var pubDateButtonItem: UIBarButtonItem!
+    
+    
     
     
     var tutorialURL : NSURL!
@@ -113,6 +116,11 @@ class TutorialViewController: UIViewController, UIPopoverPresentationControllerD
     
     
     
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        activityIndicator.stopAnimating()
+        activityIndicator.hidden = true
+    }
     
     
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {

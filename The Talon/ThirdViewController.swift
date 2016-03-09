@@ -20,8 +20,13 @@ class ThirdViewController: UITableViewController, XMLParserDelegate {
         let url = NSURL(string: "https://twitrss.me/twitter_user_to_rss/?user=SHS_Eagles")
         xmlParser = XMLParser()
         xmlParser.delegate = self
-        xmlParser.startParsingWithContentsOfURL(url!)
+        
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), {
+            self.xmlParser.startParsingWithContentsOfURL(url!)
+        })
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,8 +37,12 @@ class ThirdViewController: UITableViewController, XMLParserDelegate {
     // MARK: XMLParserDelegate method implementation
     
     func parsingWasFinished() {
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(), {
+            self.tableView.reloadData()
+        })
     }
+    
+    
     
     
     // MARK: - Table view data source

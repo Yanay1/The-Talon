@@ -8,16 +8,22 @@
 import UIKit
 
 class TopicsTableViewController: UITableViewController, XMLParserDelegate {
+    @IBOutlet weak var navigationBar: UINavigationItem!
     
     var xmlParser : XMLParser!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.navigationBar.title = "Loading"
         let url = NSURL(string: "http://sharontalon.com/feed")
         xmlParser = XMLParser()
         xmlParser.delegate = self
-        xmlParser.startParsingWithContentsOfURL(url!)
+        
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), {
+            self.xmlParser.startParsingWithContentsOfURL(url!)
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,7 +35,10 @@ class TopicsTableViewController: UITableViewController, XMLParserDelegate {
     // MARK: XMLParserDelegate method implementation
     
     func parsingWasFinished() {
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(), {
+            self.tableView.reloadData()
+            self.navigationBar.title = "The Talon"
+        })
     }
     
     

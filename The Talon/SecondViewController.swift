@@ -12,14 +12,20 @@ class SecondViewController: UITableViewController, XMLParserDelegate {
     
     var xmlParser : XMLParser!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let url = NSURL(string: "http://twitrss.me/twitter_user_to_rss/?user=shstalon")
         xmlParser = XMLParser()
         xmlParser.delegate = self
-        xmlParser.startParsingWithContentsOfURL(url!)
+        
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), {
+            self.xmlParser.startParsingWithContentsOfURL(url!)
+        })
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -30,7 +36,9 @@ class SecondViewController: UITableViewController, XMLParserDelegate {
     // MARK: XMLParserDelegate method implementation
     
     func parsingWasFinished() {
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(), {
+            self.tableView.reloadData()
+        })
     }
     
     
